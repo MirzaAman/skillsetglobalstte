@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4c5ecb8.css",
+    "main.js": "/static/js/main.b84b93d6.js",
+    "static/media/bg-login.png": "/static/media/bg-login.2f9a4f018b5bdc8fc0c8.png",
+    "static/media/welcome.png": "/static/media/welcome.9feb804e15d249fb7fa3.png",
+    "static/media/contact-man.png": "/static/media/contact-man.8f458100089ca8889fa8.png",
+    "static/media/er.png": "/static/media/er.57a46be2a1afef3a31d2.png",
+    "static/media/favorite-chips-1.png": "/static/media/favorite-chips-1.944ab7157966c51d8f64.png",
+    "static/media/favorite-chips-2.png": "/static/media/favorite-chips-2.cecb0ff402a388e34444.png",
+    "static/media/favorite-chips-3.png": "/static/media/favorite-chips-3.b5152af87337b90f840e.png",
+    "static/media/1.png": "/static/media/1.a0c2c4e66807aa17842b.png",
+    "static/media/chips-1.png": "/static/media/chips-1.cbdf32b1ae9b24c21306.png",
+    "static/media/chips-2.png": "/static/media/chips-2.b2b701aff17109db79cf.png",
+    "static/media/tomato-2.png": "/static/media/tomato-2.7a288db1dd4703bdea0d.png",
+    "static/media/chips-3.png": "/static/media/chips-3.6e8c9a823815d0d4dfd7.png",
+    "static/media/leaf-3.png": "/static/media/leaf-3.d56a94c46eab62b9d85a.png",
+    "static/media/tomato-1.png": "/static/media/tomato-1.587354b6f69e8c131c01.png",
+    "static/media/leaf-1.png": "/static/media/leaf-1.3990ed768fe43f0590b2.png",
+    "static/media/leaf-2.png": "/static/media/leaf-2.e0448e2532af7a1a0d90.png",
+    "index.html": "/index.html",
+    "main.d4c5ecb8.css.map": "/static/css/main.d4c5ecb8.css.map",
+    "main.b84b93d6.js.map": "/static/js/main.b84b93d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4c5ecb8.css",
+    "static/js/main.b84b93d6.js"
+  ]
+}

@@ -1,0 +1,271 @@
+/* src/assets/css/join1.css */
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color1: hsl(244, 75%, 57%);
+  --second-color1: hsl(249, 64%, 47%);
+  --title-color1: hsl(244, 12%, 12%);
+  --text-color1: hsl(244, 4%, 36%);
+  --body-color1: hsl(208, 97%, 85%);
+  /*========== Font and typography ==========*/
+  --body-font1: "Poppins", sans-serif;
+  --h2-font-size1: 1.25rem;
+  --small-font-size1: .813rem;
+  --smaller-font-size1: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium1: 500;
+  --font-semi-bold1: 600;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --h2-font-size1: 1.75rem;
+    --normal-font-size1: 1rem;
+    --small-font-size1: .875rem;
+    --smaller-font-size1: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+
+/* body {
+  background-color: var(--body-color1);
+  font-family: var(--body-font1);
+  color: var(--text-color1);
+} */
+
+input,
+button {
+  font-family: var(--body-font1);
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN FORM ===============*/
+.login__content1, .login__form1, .login__inputs1 {
+  display: grid;
+}
+.login__content1 {
+  position: relative;
+  height: 100vh;
+  align-items: center;
+}
+.login__img1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.login__form1 {
+  position: relative;
+  background-color: hsla(244, 16%, 92%, 0.6);
+  border: 2px solid hsla(244, 16%, 92%, 0.75);
+  margin-inline: 1.5rem;
+  row-gap: 1.25rem;
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.login__title1 {
+  color: var(--title-color1);
+  font-size: var(--h2-font-size1);
+  margin-bottom: 0.5rem;
+}
+.login__title1 span {
+  color: var(--first-color1);
+}
+.login__description1 {
+  font-size: var(--small-font-size1);
+}
+.login__inputs1 {
+  row-gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.login__label1 {
+  display: block;
+  color: var(--title-color1);
+  font-size: var(--small-font-size1);
+  font-weight: var(--font-semi-bold1);
+  margin-bottom: 0.25rem;
+}
+.login__input1 {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 6px;
+  border: 2px solid var(--text-color1);
+  background-color: hsla(244, 16%, 92%, 0.6);
+  color: var(--title-color1);
+  font-size: var(--smaller-font-size1);
+  font-weight: var(--font-medium1);
+  transition: border 0.4s;
+}
+.login__input1::placeholder {
+  color: var(--text-color1);
+}
+.login__input1:focus, .login__input1:valid {
+  border: 2px solid var(--first-color1);
+}
+.login__box1 {
+  position: relative;
+}
+.login__box1 .login__input1 {
+  padding-right: 36px;
+}
+.login__eye1 {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  right: 0.75rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.login__check1 {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+.login__check-input1 {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-color1);
+  background-color: hsla(244, 16%, 92%, 0.2);
+  border-radius: 0.25rem;
+}
+.login__check-input1:checked {
+  background: var(--first-color1);
+}
+.login__check-input1:checked::before {
+  content: "✔";
+  display: block;
+  color: #fff;
+  font-size: 0.75rem;
+  transform: translate(1.5px, -2.5px);
+}
+.login__check-label1 {
+  font-size: var(--small-font-size1);
+}
+.login__buttons1 {
+  display: flex;
+  column-gap: 0.75rem;
+}
+.login__button1 {
+  width: 100%;
+  padding: 14px 2rem;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--first-color1), var(--second-color1));
+  color: #fff;
+  font-size: var(--small-font-size1);
+  font-weight: var(--font-semi-bold1);
+  box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.login__button-ghost1 {
+  background: hsla(244, 16%, 92%, 0.6);
+  border: 2px solid var(--first-color1);
+  color: var(--first-color1);
+  box-shadow: none;
+}
+.login__forgot1 {
+  font-size: var(--smaller-font-size1);
+  font-weight: var(--font-semi-bold1);
+  color: var(--first-color1);
+  text-decoration: none;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 360px) {
+  .login__buttons1 {
+    flex-direction: column;
+  }
+}
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .login__form1 {
+    width: 450px;
+    justify-self: center;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1064px) {
+  .container1 {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .login__content1 {
+    width: 1024px;
+    height: 600px;
+  }
+  .login__img1 {
+    border-radius: 3.5rem;
+    box-shadow: 0 24px 48px hsla(244, 75%, 36%, 0.45);
+  }
+  .login__form1 {
+    justify-self: flex-end;
+    margin-right: 4.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .login__content1 {
+    height: 700px;
+  }
+  .login__form1 {
+    row-gap: 2rem;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    border: 2.5px solid hsla(244, 16%, 92%, 0.75);
+  }
+  .login__description1, .login__label1, .login__button1 {
+    font-size: var(--normal-font-size1);
+  }
+  .login__inputs1 {
+    row-gap: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .login__input1 {
+    border: 2.5px solid var(--text-color1);
+    padding: 1rem;
+    font-size: var(--small-font-size1);
+  }
+  .login__input1:focus, .login__input1:valid {
+    border: 2.5px solid var(--first-color1);
+  }
+  .login__button1 {
+    padding-block: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .login__button-ghost1 {
+    border: 2.5px solid var(--first-color1);
+  }
+}
+
+
+/* Add to join.css */
+.spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 3px solid var(--first-color1);
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

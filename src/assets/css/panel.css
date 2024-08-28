@@ -1,0 +1,61 @@
+/* MembersSection.css */
+
+/* Assuming the background color and text colors match the existing style.css */
+.panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Match the gap size to style.css if different */
+    padding: 20px;
+    justify-content: center;
+    background-color: #f5f5f5; /* Example background color; adjust to match style.css */
+}
+
+.card {
+    background-color: #ffffff; /* Match card background color to style.css */
+    border-radius: 8px; /* Match the border-radius to style.css if different */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match the shadow to style.css */
+    padding: 20px;
+    width: 300px; /* Match the width to style.css if different */
+    max-width: 100%;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(60px); /* Initial position for animation */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Match transition to style.css */
+}
+
+/* Define hover effect */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem; /* Match font-size to style.css */
+    color: #000000; /* Example color; adjust to match style.css */
+    margin-bottom: 10px;
+}
+
+.card-email, .card-phone, .card-date {
+    font-size: 1rem; /* Match font-size to style.css */
+    color: #333333; /* Example color; adjust to match style.css */
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Add to your panel.css */
+.loading, .no-members {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.member-count {
+    font-size: 1rem;
+    color: #ffffff;
+    display: block;
+    margin-top: 10px;
+}
